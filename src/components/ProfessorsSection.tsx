@@ -45,7 +45,7 @@ const getProféssors = (t: (key: string) => string) => [
   },
 ];
 
-export default function ProféssorsSection() {
+export default function ProfessorsSection() {
   const { t } = useLanguage();
   const professors = getProféssors(t);
   

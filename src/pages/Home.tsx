@@ -3,7 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import CoursesSection from '@/components/CoursesSection';
 import ScienceClubSection from '@/components/ScienceClubSection';
 import MethodologySection from '@/components/MethodologySection';
-import ProféssorsSection from '@/components/ProféssorsSection';
+import ProfessorsSection from '@/components/ProfessorsSection';
 import SchedulePricingSection from '@/components/SchedulePricingSection';
 import AboutSection from '@/components/AboutSection';
 import FAQSection from '@/components/FAQSection';
@@ -29,7 +29,7 @@ export default function Home() {
         <CoursesSection />
         <ScienceClubSection />
         <MethodologySection />
-        <ProféssorsSection />
+        <ProfessorsSection />
         <SchedulePricingSection />
         <AboutSection />
         <FAQSection />
