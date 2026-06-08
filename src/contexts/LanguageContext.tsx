@@ -71,7 +71,7 @@ const translations = {
     'methodology.ctaDesc': 'Entre em contato conosco para conhecer mais sobre nossas turmas e como podemos ajudar no desenvolvimento acadêmico do seu filho.',
     
     'professors.label': 'QUEM SOMOS',
-    'professors.title': 'Nossos Professores',
+    'professors.title': 'Conheça Nossos Professores',
     'professors.description': 'Uma equipe de educadores com formação acadêmica de excelência, dedicados ao desenvolvimento integral de seus alunos.',
     'professors.giorgio.specialty': 'Matemática, Física e Ciências',
     'professors.giorgio.cred1': 'Doutor em Ciências pelo Instituto Tecnológico de Aeronáutica (ITA)',
