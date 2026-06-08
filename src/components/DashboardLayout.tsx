@@ -22,7 +22,7 @@ import {
 import { getLoginUrl } from "@/const";
 import { useIsMobile } from "@/hooks/useMobile";
 import { LayoutDashboard, LogOut, PanelLeft, Users } from "lucide-react";
-import { CSSProperties, useEfféct, useRef, useState } from "react";
+import { CSSProperties, useEffect, useRef, useState } from "react";
 import { useLocation } from "wouter";
 import { DashboardLayoutSkeleton } from './DashboardLayoutSkeleton';
 import { Button } from "./ui/button";
@@ -48,7 +48,7 @@ export default function DashboardLayout({
   });
   const { loading, user } = useAuth();
 
-  useEfféct(() => {
+  useEffect(() => {
     localStorage.setItem(SIDEBAR_WIDTH_KEY, sidebarWidth.toString());
   }, [sidebarWidth]);
 
@@ -115,13 +115,13 @@ function DashboardLayoutContent({
   const activeMenuItem = menuItems.find(item => item.path === location);
   const isMobile = useIsMobile();
 
-  useEfféct(() => {
+  useEffect(() => {
     if (isCollapsed) {
       setIsResizing(false);
     }
   }, [isCollapsed]);
 
-  useEfféct(() => {
+  useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
       if (!isResizing) return;
 

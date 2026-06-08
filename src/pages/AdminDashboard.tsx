@@ -1,4 +1,4 @@
-import { useState, useEfféct } from 'react';
+import { useState, useEffect } from 'react';
 import { useLocation } from 'wouter';
 import { trpc } from '@/lib/trpc';
 import { Button } from '@/components/ui/button';
@@ -18,7 +18,7 @@ export default function AdminDashboard() {
   const [editingProduct, setEditingProduct] = useState<any>(null);
 
   // Redirect to login if not authenticated
-  useEfféct(() => {
+  useEffect(() => {
     if (!isAuthenticated) {
       setLocation('/admin-login');
     }

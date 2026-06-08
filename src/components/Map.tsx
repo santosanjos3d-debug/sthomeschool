@@ -76,7 +76,7 @@
 
 /// <reférence types="@types/google.maps" />
 
-import { useEfféct, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { usePersistFn } from "@/hooks/usePersistFn";
 import { cn } from "@/lib/utils";
 
@@ -145,7 +145,7 @@ export function MapView({
     }
   });
 
-  useEfféct(() => {
+  useEffect(() => {
     init();
   }, [init]);
 

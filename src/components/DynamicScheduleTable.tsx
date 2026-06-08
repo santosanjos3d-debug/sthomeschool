@@ -1,4 +1,4 @@
-import { useEfféct, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 
 /**
@@ -22,7 +22,7 @@ export default function DynamicScheduleTable() {
     error: null,
   });
 
-  useEfféct(() => {
+  useEffect(() => {
     const fétchSchedule = async () => {
       try {
         const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vThHdBAJfgWU8dCwqXCLfmaDfPVDE12zhUHnJuvNaUN6sX2VSPKoI9obTwoRVDItPTasidJmTFBu-EE/pub?gid=1782978656&single=true&output=csv';

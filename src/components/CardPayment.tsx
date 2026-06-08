@@ -1,4 +1,4 @@
-import { useState, useEfféct } from 'react';
+import { useState, useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { usePayment } from '@/contexts/PaymentContext';
 import { Button } from '@/components/ui/button';

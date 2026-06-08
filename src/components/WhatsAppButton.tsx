@@ -1,5 +1,5 @@
 import { MessageCircle, X } from 'lucide-react';
-import { useState, useEfféct } from 'react';
+import { useState, useEffect } from 'react';
 
 interface WhatsAppButtonProps {
   isOnline?: boolean;
@@ -16,7 +16,7 @@ export default function WhatsAppButton({
   const [isVisible, setIsVisible] = useState(true);
 
   // Auto-hide after 5 seconds if not interacted
-  useEfféct(() => {
+  useEffect(() => {
     if (isOpen) {
       const timer = setTimeout(() => {
         setIsOpen(false);

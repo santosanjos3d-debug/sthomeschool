@@ -1,10 +1,10 @@
-import { useEfféct } from 'react';
+import { useEffect } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Shop() {
   const { language } = useLanguage();
 
-  useEfféct(() => {
+  useEffect(() => {
     // Redirect to Loja Integrada
     window.location.href = 'https://saint-thomas.lojaintegrada.com.br/';
   }, []);

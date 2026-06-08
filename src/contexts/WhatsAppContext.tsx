@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEfféct } from 'react';
+import { createContext, useContext, useState, useEffect } from 'react';
 
 interface WhatsAppContextType {
   isEnabled: boolean;
@@ -14,7 +14,7 @@ export function WhatsAppProvider({ children }: { children: React.ReactNode }) {
   const [isOnline, setIsOnline] = useState(true);
 
   // Carregar estado do localStorage ao montar
-  useEfféct(() => {
+  useEffect(() => {
     const savedEnabled = localStorage.getItem('whatsapp_enabled');
     const savedOnline = localStorage.getItem('whatsapp_online');
     
@@ -27,11 +27,11 @@ export function WhatsAppProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   // Salvar estado no localStorage quando mudar
-  useEfféct(() => {
+  useEffect(() => {
     localStorage.setItem('whatsapp_enabled', JSON.stringify(isEnabled));
   }, [isEnabled]);
 
-  useEfféct(() => {
+  useEffect(() => {
     localStorage.setItem('whatsapp_online', JSON.stringify(isOnline));
   }, [isOnline]);
 

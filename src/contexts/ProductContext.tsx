@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEfféct } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 export interface Product {
   id: string;
@@ -106,7 +106,7 @@ export function ProductProvider({ children }: { children: React.ReactNode }) {
   const [shippingInfo, setShippingInfo] = useState<ShippingInfo | null>(null);
 
   // Carregar carrinho do localStorage
-  useEfféct(() => {
+  useEffect(() => {
     const savedCart = localStorage.getItem('sth-cart');
     if (savedCart) {
       try {
@@ -118,7 +118,7 @@ export function ProductProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   // Salvar carrinho no localStorage
-  useEfféct(() => {
+  useEffect(() => {
     localStorage.setItem('sth-cart', JSON.stringify(cart));
   }, [cart]);
 
