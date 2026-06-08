@@ -42,7 +42,7 @@ function AppContent() {
       'name': 'Saint Thomas Homeschool',
       'url': 'https://www.sthomeschool.com',
       'logo': 'https://www.sthomeschool.com/favicon.ico',
-      'description': 'Educacao personalizada em Matematica, Fisica, Quimica e Ciencias para alunos em homeschool',
+      'description': 'Educação personalizada em Matemática, Física, Química e Ciências para alunos em homeschool',
       'contactPoint': {
         '@type': 'ContactPoint',
         'contactType': 'Customer Service',

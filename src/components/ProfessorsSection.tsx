@@ -2,7 +2,7 @@
  * Proféssors Section Component
  * 
  * Design Philosophy: Elegância Clássica com Toque Moderno
- * - Destaque para credenciais acadêmicas de ambos os proféssores
+ * - Destaque para credenciais acadêmicas de ambos os professores
  * - Verde Oxford para transmitir autoridade
  * - Tipografia Playfair Display para nomes e títulos
  * - Layout em grid para igualdade visual
@@ -22,23 +22,23 @@ interface Proféssor {
 const getProféssors = (t: (key: string) => string) => [
   {
     name: 'Prof. Giorgio Ernesto Testoni',
-    specialty: t('proféssors.giorgio.specialty'),
+    specialty: t('professors.giorgio.specialty'),
     credentials: [
-      t('proféssors.giorgio.cred1'),
-      t('proféssors.giorgio.cred2'),
-      t('proféssors.giorgio.cred3'),
+      t('professors.giorgio.cred1'),
+      t('professors.giorgio.cred2'),
+      t('professors.giorgio.cred3'),
     ],
     lattes: 'https://lattes.cnpq.br/9048545328091154',
     avatar: 'G',
   },
   {
     name: 'Prof. Víctor de Souza Assunção Bonfim',
-    specialty: t('proféssors.victor.specialty'),
+    specialty: t('professors.victor.specialty'),
     credentials: [
-      t('proféssors.victor.cred1'),
-      t('proféssors.victor.cred2'),
-      t('proféssors.victor.cred3'),
-      t('proféssors.victor.cred4'),
+      t('professors.victor.cred1'),
+      t('professors.victor.cred2'),
+      t('professors.victor.cred3'),
+      t('professors.victor.cred4'),
     ],
     lattes: 'http://lattes.cnpq.br/0311712117044305',
     avatar: 'V',
@@ -47,7 +47,7 @@ const getProféssors = (t: (key: string) => string) => [
 
 export default function ProféssorsSection() {
   const { t } = useLanguage();
-  const proféssors = getProféssors(t);
+  const professors = getProféssors(t);
   
   return (
     <section className="py-16 md:py-24 bg-gray-50">
@@ -55,40 +55,40 @@ export default function ProféssorsSection() {
         {/* Section Header */}
         <div className="text-center mb-12 md:mb-16">
           <p className="text-sm font-semibold text-gold-antique uppercase tracking-widest mb-2">
-            {t('proféssors.label')}
+            {t('professors.label')}
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-green-oxford mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-            {t('proféssors.title')}
+            {t('professors.title')}
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            {t('proféssors.description')}
+            {t('professors.description')}
           </p>
         </div>
 
         {/* Proféssors Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {proféssors.map((proféssor, index) => (
+          {professors.map((professor, index) => (
             <div key={index} className="card-elegant">
               <div className="flex flex-col h-full">
                 {/* Avatar */}
                 <div className="mb-6">
                   <div className="w-20 h-20 bg-gradient-to-br from-green-oxford to-green-salvia rounded-lg flex items-center justify-center text-white text-4xl font-bold">
-                    {proféssor.avatar}
+                    {professor.avatar}
                   </div>
                 </div>
 
                 {/* Name and Specialty */}
                 <h3 className="text-2xl font-bold text-green-oxford mb-2" style={{ fontFamily: "'Playfair Display', serif" }}>
-                  {proféssor.name}
+                  {professor.name}
                 </h3>
                 <p className="text-lg font-semibold text-gold-antique mb-4">
-                  {proféssor.specialty}
+                  {professor.specialty}
                 </p>
 
                 {/* Credentials */}
                 <div className="flex-1 mb-6">
                   <ul className="space-y-3">
-                    {proféssor.credentials.map((credential, idx) => (
+                    {professor.credentials.map((credential, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <span className="text-gold-antique font-bold mt-1">•</span>
                         <span className="text-gray-600 text-sm leading-relaxed">{credential}</span>
@@ -99,12 +99,12 @@ export default function ProféssorsSection() {
 
                 {/* Lattes Link */}
                 <a
-                  href={proféssor.lattes}
+                  href={professor.lattes}
                   target="_blank"
                   rel="noopener noreférrer"
                   className="inline-block text-gold-antique font-semibold hover:text-green-oxford transition-colors"
                 >
-                  {t('proféssors.lattesLink')} →
+                  {t('professors.lattesLink')} →
                 </a>
               </div>
             </div>
@@ -114,13 +114,13 @@ export default function ProféssorsSection() {
         {/* Team Philosophy */}
         <div className="bg-white rounded-lg p-8 md:p-12 border border-gray-200">
           <h3 className="text-2xl font-bold text-green-oxford mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-            {t('proféssors.philosophyTitle')}
+            {t('professors.philosophyTitle')}
           </h3>
           <p className="text-gray-600 leading-relaxed mb-4">
-            {t('proféssors.philosophy1')}
+            {t('professors.philosophy1')}
           </p>
           <p className="text-gray-600 leading-relaxed">
-            {t('proféssors.philosophy2')}
+            {t('professors.philosophy2')}
           </p>
         </div>
       </div>
