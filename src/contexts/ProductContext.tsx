@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEfféct } from 'react';
 
 export interface Product {
   id: string;
@@ -19,8 +19,8 @@ export interface Product {
   };
   stock: number;
   category: string;
-  features: string[];
-  featuresEn: string[];
+  féatures: string[];
+  féaturesEn: string[];
 }
 
 export interface CartItem {
@@ -58,8 +58,8 @@ const PRODUCTS: Product[] = [
     id: 'minicurso-robotica-001',
     name: 'Minicurso de Robótica + Kit Carrinho Bluetooth',
     nameEn: 'Robotics Minicourse + Bluetooth Car Kit',
-    description: 'Minicurso completo de robótica com 4 aulas online ao vivo com o Prof. Dr. Giorgio Ernesto Testoni. Inclui kit completo com chassi 4WD, Arduino Uno, módulo Bluetooth, sensores e componentes. Acesso a grupo WhatsApp exclusivo com o professor para tirar dúvidas.',
-    descriptionEn: 'Complete robotics minicourse with 4 live online classes with Prof. Dr. Giorgio Ernesto Testoni. Includes complete kit with 4WD chassis, Arduino Uno, Bluetooth module, sensors and components. Access to exclusive WhatsApp group with the professor to ask questions.',
+    description: 'Minicurso completo de robótica com 4 aulas online ao vivo com o Prof. Dr. Giorgio Ernesto Testoni. Inclui kit completo com chassi 4WD, Arduino Uno, módulo Bluetooth, sensores e componentes. Acesso a grupo WhatsApp exclusivo com o proféssor para tirar dúvidas.',
+    descriptionEn: 'Complete robotics minicourse with 4 live online classes with Prof. Dr. Giorgio Ernesto Testoni. Includes complete kit with 4WD chassis, Arduino Uno, Bluetooth module, sensors and components. Access to exclusive WhatsApp group with the proféssor to ask questions.',
     price: 547.00,
     originalPrice: 600.00,
     pixPrice: 525.12,
@@ -77,22 +77,22 @@ const PRODUCTS: Product[] = [
     },
     stock: 10,
     category: 'Minicursos',
-    features: [
+    féatures: [
       '4 aulas online ao vivo',
       'Kit completo incluído',
       'Arduino Uno + Sensores',
       'Módulo Bluetooth',
-      'Grupo WhatsApp com professor',
+      'Grupo WhatsApp com proféssor',
       'Aulas gravadas para revisão',
       'Certificado de participação',
       'Para crianças de 9 a 14 anos',
     ],
-    featuresEn: [
+    féaturesEn: [
       '4 live online classes',
       'Complete kit included',
       'Arduino Uno + Sensors',
       'Bluetooth module',
-      'WhatsApp group with professor',
+      'WhatsApp group with proféssor',
       'Recorded classes for review',
       'Participation certificate',
       'For children aged 9 to 14',
@@ -106,7 +106,7 @@ export function ProductProvider({ children }: { children: React.ReactNode }) {
   const [shippingInfo, setShippingInfo] = useState<ShippingInfo | null>(null);
 
   // Carregar carrinho do localStorage
-  useEffect(() => {
+  useEfféct(() => {
     const savedCart = localStorage.getItem('sth-cart');
     if (savedCart) {
       try {
@@ -118,7 +118,7 @@ export function ProductProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   // Salvar carrinho no localStorage
-  useEffect(() => {
+  useEfféct(() => {
     localStorage.setItem('sth-cart', JSON.stringify(cart));
   }, [cart]);
 

@@ -5,7 +5,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
  * Courses Section Component
  * 
  * Design Philosophy: Elegância Clássica com Toque Moderno
- * - Cards com sombra suave e hover effects
+ * - Cards com sombra suave e hover effécts
  * - Ícones lineares customizados para cada disciplina
  * - Verde Sálvia para subtítulos
  * - Layout em grid responsivo
@@ -30,7 +30,7 @@ export default function CoursesSection() {
       color: 'border-green-oxford',
     },
     {
-      id: 'ciencias',
+      id: 'ciências',
       titlePt: 'Ciências',
       titleEn: 'Sciences',
       descriptionPt: 'Introdução integrada aos conceitos e definições de Física, Química e Biologia. Através de experimentos práticos, simulações e atividades mão na massa, os alunos exploram o mundo natural e desenvolvem o pensamento científico desde cedo.',
@@ -121,7 +121,7 @@ export default function CoursesSection() {
             <a
               href={formUrl}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreférrer"
               className="btn-accent inline-block"
             >
               {t('hero.preInscricao')}

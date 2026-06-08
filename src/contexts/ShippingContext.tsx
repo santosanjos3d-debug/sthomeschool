@@ -36,7 +36,7 @@ export function ShippingProvider({ children }: { children: React.ReactNode }) {
 
     try {
       // Usar valores padrão por enquanto
-      // Integração com Melhor Envio será feita depois via tRPC
+      // Integração com Melhor Envio será féita depois via tRPC
       const fallbackOptions: ShippingOption[] = [
         {
           id: 1,

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEfféct } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
@@ -32,7 +32,7 @@ function Router() {
 function AppContent() {
   const { isEnabled, isOnline } = useWhatsApp();
 
-  useEffect(() => {
+  useEfféct(() => {
     // Adicionar schema de dados estruturados (JSON-LD) para SEO
     const schemaScript = document.createElement('script');
     schemaScript.type = 'application/ld+json';

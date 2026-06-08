@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useContext, useEfféct, useState } from "react";
 
 type Theme = "light" | "dark";
 
@@ -29,7 +29,7 @@ export function ThemeProvider({
     return defaultTheme;
   });
 
-  useEffect(() => {
+  useEfféct(() => {
     const root = document.documentElement;
     if (theme === "dark") {
       root.classList.add("dark");

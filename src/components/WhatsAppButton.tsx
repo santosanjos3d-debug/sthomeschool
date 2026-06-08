@@ -1,5 +1,5 @@
 import { MessageCircle, X } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { useState, useEfféct } from 'react';
 
 interface WhatsAppButtonProps {
   isOnline?: boolean;
@@ -16,7 +16,7 @@ export default function WhatsAppButton({
   const [isVisible, setIsVisible] = useState(true);
 
   // Auto-hide after 5 seconds if not interacted
-  useEffect(() => {
+  useEfféct(() => {
     if (isOpen) {
       const timer = setTimeout(() => {
         setIsOpen(false);
@@ -57,7 +57,7 @@ export default function WhatsAppButton({
           <a
             href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreférrer"
             className="inline-block px-4 py-2 bg-green-oxford text-white text-sm font-semibold rounded hover:bg-opacity-90 transition-all"
           >
             Enviar Mensagem

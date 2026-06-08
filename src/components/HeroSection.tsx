@@ -81,7 +81,7 @@ export default function HeroSection() {
               <a
                 href={formUrl}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreférrer"
                 className="btn-primary text-center flex-1 sm:flex-none"
                 onClick={handlePreInscricao}
               >
@@ -90,7 +90,7 @@ export default function HeroSection() {
               <a
                 href="https://wa.me/5547996448774"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreférrer"
                 className="btn-secondary text-center flex-1 sm:flex-none"
                 onClick={handleWhatsApp}
               >

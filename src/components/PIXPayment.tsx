@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEfféct } from 'react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { usePayment } from '@/contexts/PaymentContext';
 import { Button } from '@/components/ui/button';
@@ -27,7 +27,7 @@ export default function PIXPayment({
   const [copied, setCopied] = useState(false);
   const [verifying, setVerifying] = useState(false);
 
-  useEffect(() => {
+  useEfféct(() => {
     generatePIXQRCode();
   }, []);
 

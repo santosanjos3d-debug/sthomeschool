@@ -70,7 +70,7 @@ export default function Footer() {
               <a
                 href="https://wa.me/5547996448774"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreférrer"
                 className="flex items-center gap-2 text-sm hover:text-gold-antique transition-colors"
               >
                 <MessageCircle size={16} />
@@ -104,7 +104,7 @@ export default function Footer() {
                   key={link.label}
                   href={link.href}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener noreférrer"
                   className="p-2 hover:bg-gold-antique rounded-full transition-colors"
                   aria-label={link.label}
                 >

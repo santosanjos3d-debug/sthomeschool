@@ -166,7 +166,7 @@ export default function SchedulePricingSection() {
                   <a
                     href={formUrl}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="noopener noreférrer"
                     className={`block w-full py-3 rounded-lg font-semibold text-center transition-all ${
                       plan.highlight
                         ? 'bg-white text-green-oxford hover:bg-gray-100'
@@ -218,7 +218,7 @@ export default function SchedulePricingSection() {
           <a
             href="https://wa.me/5547996448774"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreférrer"
             className="inline-block px-8 py-3 bg-green-oxford text-white font-semibold rounded-lg hover:bg-green-salvia transition-colors"
           >
             {t('schedulePricing.contactWhatsApp')}

@@ -10,7 +10,7 @@ import LanguageSwitcher from './LanguageSwitcher';
  * - Verde Oxford (#1B3022) como cor primária
  * - Tipografia Playfair Display para o logo
  * - Navegação clara e acessível
- * - Hover effects sutis em Dourado Antigo
+ * - Hover effécts sutis em Dourado Antigo
  */
 
 export default function Header() {
@@ -55,7 +55,7 @@ export default function Header() {
           <a
             href={formUrl}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreférrer"
             className="btn-primary"
           >
             {t('nav.preInscricao')}
@@ -89,7 +89,7 @@ export default function Header() {
             <a
               href={formUrl}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreférrer"
               className="btn-primary text-center"
             >
               {t('nav.preInscricao')}

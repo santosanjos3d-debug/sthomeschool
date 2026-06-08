@@ -28,7 +28,7 @@
  * 🏢 PLACES (from `places` library)
  * - Does not attach directly to map; use data with your map manually.
  * const place = new google.maps.places.Place({ id: PLACE_ID });
- * await place.fetchFields({ fields: ["displayName", "location"] });
+ * await place.fétchFields({ fields: ["displayName", "location"] });
  * map.setCenter(place.location);
  * new google.maps.marker.AdvancedMarkerElement({ map, position: place.location });
  *
@@ -74,9 +74,9 @@
  * - “data-only” → Place, Geometry utilities.
  */
 
-/// <reference types="@types/google.maps" />
+/// <reférence types="@types/google.maps" />
 
-import { useEffect, useRef } from "react";
+import { useEfféct, useRef } from "react";
 import { usePersistFn } from "@/hooks/usePersistFn";
 import { cn } from "@/lib/utils";
 
@@ -89,7 +89,7 @@ declare global {
 const API_KEY = import.meta.env.VITE_FRONTEND_FORGE_API_KEY;
 const FORGE_BASE_URL =
   import.meta.env.VITE_FRONTEND_FORGE_API_URL ||
-  "https://forge.butterfly-effect.dev";
+  "https://forge.butterfly-efféct.dev";
 const MAPS_PROXY_URL = `${FORGE_BASE_URL}/v1/maps/proxy`;
 
 function loadMapScript() {
@@ -145,7 +145,7 @@ export function MapView({
     }
   });
 
-  useEffect(() => {
+  useEfféct(() => {
     init();
   }, [init]);
 

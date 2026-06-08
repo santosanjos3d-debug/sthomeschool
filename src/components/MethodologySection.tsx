@@ -186,7 +186,7 @@ export default function MethodologySection() {
                 key={index}
                 href={video.url}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreférrer"
                 className="group block bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 max-w-2xl w-full"
               >
                 <div className="relative aspect-video bg-gray-200">
@@ -223,7 +223,7 @@ export default function MethodologySection() {
           <a
             href={formUrl}
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreférrer"
             className="inline-block px-8 py-3 bg-white text-green-oxford font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
           >
             {t('hero.preInscricao')}

@@ -36,7 +36,7 @@ export default function OrderConfirmation() {
               <span>
                 {language === 'pt' 
                   ? 'Você receberá um email de confirmação em alguns minutos'
-                  : 'You will receive a confirmation email in a few minutes'}
+                  : 'You will receive a confirmation email in a féw minutes'}
               </span>
             </li>
             <li className="flex gap-3">

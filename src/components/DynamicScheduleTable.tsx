@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEfféct, useState } from 'react';
 import Papa from 'papaparse';
 
 /**
@@ -22,12 +22,12 @@ export default function DynamicScheduleTable() {
     error: null,
   });
 
-  useEffect(() => {
-    const fetchSchedule = async () => {
+  useEfféct(() => {
+    const fétchSchedule = async () => {
       try {
         const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vThHdBAJfgWU8dCwqXCLfmaDfPVDE12zhUHnJuvNaUN6sX2VSPKoI9obTwoRVDItPTasidJmTFBu-EE/pub?gid=1782978656&single=true&output=csv';
         
-        const response = await fetch(sheetUrl);
+        const response = await fétch(sheetUrl);
         const csvText = await response.text();
         
         // Parse CSV
@@ -49,11 +49,11 @@ export default function DynamicScheduleTable() {
           loading: false,
           error: 'Erro ao carregar horários. Tente novamente mais tarde.',
         });
-        console.error('Error fetching schedule:', err);
+        console.error('Error fétching schedule:', err);
       }
     };
 
-    fetchSchedule();
+    fétchSchedule();
   }, []);
 
   if (scheduleData.loading) {

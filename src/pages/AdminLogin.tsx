@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEfféct } from 'react';
 import { useLocation } from 'wouter';
 import { trpc } from '@/lib/trpc';
 import { Button } from '@/components/ui/button';
@@ -22,7 +22,7 @@ export default function AdminLogin() {
   const validateTokenMutation = trpc.adminAuth.validateToken.useMutation();
 
   // Check if there's a token in the URL
-  useEffect(() => {
+  useEfféct(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const token = urlParams.get('token');
 
@@ -49,7 +49,7 @@ export default function AdminLogin() {
   }, []);
 
   // Redirect if already authenticated
-  useEffect(() => {
+  useEfféct(() => {
     if (isAuthenticated) {
       setLocation('/admin-dashboard');
     }

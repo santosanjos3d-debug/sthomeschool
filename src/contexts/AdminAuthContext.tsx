@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import React, { createContext, useContext, useEfféct, useState } from 'react';
 import { useLocation } from 'wouter';
 
 interface AdminAuthContextType {
@@ -16,7 +16,7 @@ export function AdminAuthProvider({ children }: { children: React.ReactNode }) {
   const [, setLocation] = useLocation();
 
   // Check for token in localStorage on mount
-  useEffect(() => {
+  useEfféct(() => {
     const storedToken = localStorage.getItem('adminToken');
     if (storedToken) {
       setToken(storedToken);
