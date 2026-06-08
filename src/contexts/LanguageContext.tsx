@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState } from 'react';
 
 type Language = 'pt' | 'en';
 
@@ -19,7 +19,7 @@ const translations = {
     'nav.sobre': 'Sobre',
     'nav.loja': 'Loja',
     'nav.preInscricao': 'Pr&eacute;-Inscri&ccedil;&atilde;o',
-    
+
     'hero.bemVindo': 'Bem-vindo &agrave;',
     'hero.titulo': 'Saint Thomas Homeschool',
     'hero.citacao': '"O estudioso &eacute; aquele que leva aos demais o que ele compreendeu: a Verdade"',
@@ -27,7 +27,7 @@ const translations = {
     'hero.descricao': 'Educa&ccedil;&atilde;o personalizada em Matem&aacute;tica, F&iacute;sica, Qu&iacute;mica e Ci&ecirc;ncias para alunos em homeschool ou que frequentam a escola. Aprendizado baseado em experimentos, simula&ccedil;&otilde;es e pr&aacute;tica, sob a orienta&ccedil;&atilde;o do Prof. Giorgio Testoni, Doutor em Ci&ecirc;ncias pelo Instituto Tecnol&oacute;gico de Aeron&aacute;utica (ITA).',
     'hero.preInscricao': 'Pr&eacute;-Inscri&ccedil;&atilde;o',
     'hero.faleConosco': 'Fale Conosco',
-    
+
     'professors.label': 'QUEM SOMOS',
     'professors.title': 'Conhe&ccedil;a Nossos Professores',
     'professors.description': 'Uma equipe de educadores com forma&ccedil;&atilde;o acad&ecirc;mica de excel&ecirc;ncia, dedicados ao desenvolvimento integral de seus alunos.',
@@ -44,11 +44,11 @@ const translations = {
     'professors.philosophyTitle': 'Nossa Filosofia Educacional',
     'professors.philosophy1': 'Acreditamos que a verdadeira educa&ccedil;&atilde;o vai al&eacute;m da memoriza&ccedil;&atilde;o de conceitos. Nossos professores trabalham juntos para proporcionar uma experi&ecirc;ncia de aprendizado que combina rigor cient&iacute;fico com abordagem humanizada, permitindo que cada aluno desenvolva sua compreens&atilde;o profunda e capacidade de aplica&ccedil;&atilde;o pr&aacute;tica do conhecimento.',
     'professors.philosophy2': 'Com forma&ccedil;&atilde;o acad&ecirc;mica de excel&ecirc;ncia e experi&ecirc;ncia em Educa&ccedil;&atilde;o Personalizada, estamos comprometidos em guiar nossos alunos n&atilde;o apenas para o sucesso acad&ecirc;mico, mas para o desenvolvimento integral como pensadores cr&iacute;ticos e cidad&atilde;os conscientes.',
-    
+
     'club.title': 'Clube de Ci&ecirc;ncias',
     'club.subtitle': 'Feira de Ci&ecirc;ncias Anual',
     'club.description': 'Todo ano, nossos alunos de Ci&ecirc;ncias apresentam projetos na Feira de Ci&ecirc;ncias, aplicando na pr&aacute;tica tudo o que aprenderam. Veja os resultados dos anos anteriores:',
-    
+
     'about.label': 'Nossa Hist&oacute;ria',
     'about.title': 'Sobre a ST Homeschool',
     'about.originTitle': 'Como Tudo Come&ccedil;ou',
@@ -83,16 +83,8 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   const [language, setLanguage] = useState<Language>('pt');
 
   const t = (key: string): string => {
-    const keys = key.split('.');
-    let value: any = translations[language];
-    for (const k of keys) {
-      if (value && value[k]) {
-        value = value[k];
-      } else {
-        return key;
-      }
-    }
-    return value;
+    const dict = translations[language] as Record<string, string>;
+    return dict[key] ?? key;
   };
 
   return (
