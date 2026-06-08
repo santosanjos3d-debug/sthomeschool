@@ -22,7 +22,7 @@ export default function CoursesSection() {
       id: 'matematica',
       titlePt: 'Matemática',
       titleEn: 'Mathematics',
-      descriptionPt: 'A matemática como linguagem científica universal: compreendida e praticada através de exercícios, simulações e aplicações no cotidiano. Desenvolvemos o real domínio da lógica matemática, essencial para a compreensão do mundo ao nosso redor.',
+      descriptionPt: 'A matemática como linguagem científica universal: compreendida e práticada através de exercícios, simulações e aplicações no cotidiano. Desenvolvemos o real domínio da lógica matemática, essencial para a compreensão do mundo ao nosso redor.',
       descriptionEn: 'Mathematics as a universal scientific language: understood and practiced through exercises, simulations and real-world applications. We develop true mastery of mathematical logic, essential for understanding the world around us.',
       ageGroupPt: 'A partir de 11 anos',
       ageGroupEn: 'From 11 years old',
