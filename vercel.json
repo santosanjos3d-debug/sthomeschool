@@ -1,5 +1,5 @@
 {
-  "framework": "vite",
+  "framework": "vite", "cache": false,
   "buildCommand": "pnpm run build",
   "outputDirectory": "dist/public",
   "rewrites": [
