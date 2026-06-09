@@ -14,11 +14,11 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 const translations = {
   pt: {
     'nav.turmas': 'Turmas 2026',
-    'nav.clube': 'Clube de Ci&ecirc;ncias',
+    'nav.clube': 'Clube de Ciências',
     'nav.metodologia': 'Metodologia',
     'nav.sobre': 'Sobre',
     'nav.loja': 'Loja',
-    'nav.preInscricao': 'Pr&eacute;-Inscri&ccedil;&atilde;o',
+    'nav.preInscricao': 'Pré-Inscrição',
 
     'hero.bemVindo': 'Bem-vindo &agrave;',
     'hero.titulo': 'Saint Thomas Homeschool',
