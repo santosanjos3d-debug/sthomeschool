@@ -19,8 +19,8 @@ export interface Product {
   };
   stock: number;
   category: string;
-  féatures: string[];
-  féaturesEn: string[];
+  features: string[];
+  featuresEn: string[];
 }
 
 export interface CartItem {
@@ -77,7 +77,7 @@ const PRODUCTS: Product[] = [
     },
     stock: 10,
     category: 'Minicursos',
-    féatures: [
+    features: [
       '4 aulas online ao vivo',
       'Kit completo incluído',
       'Arduino Uno + Sensores',
@@ -87,7 +87,7 @@ const PRODUCTS: Product[] = [
       'Certificado de participação',
       'Para crianças de 9 a 14 anos',
     ],
-    féaturesEn: [
+    featuresEn: [
       '4 live online classes',
       'Complete kit included',
       'Arduino Uno + Sensors',

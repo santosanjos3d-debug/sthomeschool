@@ -20,22 +20,22 @@ const faqItemsData: FAQItemData[] = [
   {
     id: 'valores',
     questionPt: 'Quais são os valores das aulas?',
-    questionEn: 'What are the class fées?',
-    answerPt: 'Temos um valor fixo por disciplina. Com desconto gradual de 10% para quem faz 2 disciplinas e 20% para quem faz 3 disciplinas ou mais. Entre em contato via WhatsApp ou preencha o formulário de pré-inscrição para receber uma proposta personalizada de acordo com suas necessidades.',
-    answerEn: 'We have a fixed rate per subject. With a 10% discount for those taking 2 subjects and 20% for those taking 3 or more subjects. Contact us via WhatsApp or fill out the pre-registration form to receive a personalized proposal according to your needs.'
+    questionEn: 'What are the class fees?',
+    answerPt: 'Temos um valor fixo por disciplina. Com desconto gradual de 10% para quem faz 2 disciplinas e 20% para quem faz 3 disciplinas ou mais. Entre em contato via WhatsApp ou preencha o formulário de pré-inscrição para receber uma cotação personalizada.',
+    answerEn: 'We have a fixed rate per subject. With a 10% discount for those taking 2 subjects and 20% for those taking 3 or more subjects. Contact us via WhatsApp or fill out the pre-registration form to receive a personalized quote.'
   },
   {
     id: 'horarios',
     questionPt: 'Quais são os horários das aulas?',
     questionEn: 'What are the class schedules?',
-    answerPt: 'As aulas em grupo ocorrem no período matutino. Também oférecemos sessões de Clube de Ciências com horários flexíveis. Para informações sobre outras possibilidades de agendamento, entre em contato conosco.',
-    answerEn: 'Group classes are held in the morning. We also offér Science Club sessions with flexible schedules. For information about other scheduling options, please contact us.'
+    answerPt: 'As aulas em grupo ocorrem no período matutino. Também oferecemos sessões de Clube de Ciências com horários flexíveis. Para informações sobre outras possibilidades de agendamento, favor entrar em contato.',
+    answerEn: 'Group classes are held in the morning. We also offer Science Club sessions with flexible schedules. For information about other scheduling options, please contact us.'
   },
   {
     id: 'clube-ciências-horario',
     questionPt: 'Qual o horário do Clube de Ciências?',
     questionEn: 'What is the Science Club schedule?',
-    answerPt: 'As aulas do Clube de Ciências ocorrem às quintas-féiras das 14h às 15h.',
+    answerPt: 'As aulas do Clube de Ciências ocorrem às quintas-feiras das 14h às 15h.',
     answerEn: 'Science Club classes are held on Thursdays from 2 PM to 3 PM.'
   },
   {
@@ -49,22 +49,22 @@ const faqItemsData: FAQItemData[] = [
     id: 'idade',
     questionPt: 'Qual é a faixa etária recomendada?',
     questionEn: 'What is the recommended age group?',
-    answerPt: 'Nossas aulas são recomendadas para alunos de 9 a 18 anos. Do ensino fundamental ao ensino médio. No entanto, oférecemos programas personalizados para acompanhamento individual para diférentes níveis de conhecimento. Consulte-nos para avaliar a melhor opção para seu filho.',
-    answerEn: 'Our classes are recommended for students aged 9 to 18. From elementary to high school. However, we offér personalized programs for individual mentoring for différent knowledge levels. Consult us to evaluate the best option for your child.'
+    answerPt: 'Nossas aulas são recomendadas para alunos de 9 a 18 anos. Do ensino fundamental ao ensino médio. No entanto, oferecemos programas personalizados para acompanhamento individual para diferentes níveis de conhecimento. Consulte-nos para avaliar a melhor opção para seu filho.',
+    answerEn: 'Our classes are recommended for students aged 9 to 18. From elementary to high school. However, we offer personalized programs for individual mentoring for different knowledge levels. Consult us to evaluate the best option for your child.'
   },
   {
     id: 'desconto-baixa-renda',
     questionPt: 'Existe desconto para famílias de baixa renda?',
     questionEn: 'Is there a discount for low-income families?',
-    answerPt: 'Sim. Oférecemos condições especiais (bolsa/desconto) para famílias de baixa renda, mediante análise. Entre em contato pelo WhatsApp para solicitar a avaliação e verificar a disponibilidade e o percentual de desconto aplicável.',
-    answerEn: 'Yes. We offér special conditions (scholarship/discount) for low-income families, subject to analysis. Contact us via WhatsApp to request the evaluation and check the availability and discount percentage applicable.'
+    answerPt: 'Sim. Oferecemos condições especiais (bolsa/desconto) para famílias de baixa renda, mediante análise. Entre em contato pelo WhatsApp para solicitar a avaliação e verificar a disponibilidade e o percentual de desconto aplicável.',
+    answerEn: 'Yes. We offer special conditions (scholarship/discount) for low-income families, subject to analysis. Contact us via WhatsApp to request the evaluation and check the availability and discount percentage applicable.'
   },
   {
     id: 'cancelamento',
     questionPt: 'Qual é a política de cancelamento?',
     questionEn: 'What is the cancellation policy?',
-    answerPt: 'Oférecemos flexibilidade com aviso prévio de 30 dias. Caso precise cancelar sua inscrição, entre em contato conosco para discutir as melhores opções. Temos como objetivo manter um relacionamento transparente e justo com nossos alunos e famílias.',
-    answerEn: 'We offér flexibility with 30 days notice. If you need to cancel your enrollment, contact us to discuss the best options. Our goal is to maintain a transparent and fair relationship with our students and families.'
+    answerPt: 'Oferecemos flexibilidade com aviso prévio de 30 dias. Caso precise cancelar sua inscrição, entre em contato conosco para discutir as melhores opções. Temos como objetivo manter um relacionamento transparente e justo com nossos alunos e famílias.',
+    answerEn: 'We offer flexibility with 30 days notice. If you need to cancel your enrollment, contact us to discuss the best options. Our goal is to maintain a transparent and fair relationship with our students and families.'
   },
   {
     id: 'material',
@@ -77,15 +77,15 @@ const faqItemsData: FAQItemData[] = [
     id: 'homeschool',
     questionPt: 'Como funciona para alunos em homeschool?',
     questionEn: 'How does it work for homeschool students?',
-    answerPt: 'Nossas aulas são especialmente projetadas para complementar o aprendizado de alunos em homeschool. Oférecemos flexibilidade de horários e conteúdo personalizado. Você pode escolher entre aulas individuais ou em grupo, dependendo de suas necessidades.',
-    answerEn: 'Our classes are specially designed to complement the learning of homeschool students. We offér flexible schedules and personalized content. You can choose between individual or group classes, depending on your needs.'
+    answerPt: 'Nossas aulas são especialmente projetadas para complementar o aprendizado de alunos em homeschool. Oferecemos flexibilidade de horários e conteúdo personalizado. Você pode escolher entre aulas individuais ou em grupo, dependendo de suas necessidades.',
+    answerEn: 'Our classes are specially designed to complement the learning of homeschool students. We offer flexible schedules and personalized content. You can choose between individual or group classes, depending on your needs.'
   },
   {
     id: 'contato',
     questionPt: 'Como faço para tirar dúvidas adicionais?',
     questionEn: 'How do I ask additional questions?',
-    answerPt: 'Você pode entrar em contato conosco via WhatsApp, email ou preenchendo o formulário de pré-inscrição. Responderemos suas dúvidas o mais breve possível. Também oférecemos uma conversa inicial gratuita para discutir suas expectativas e necessidades.',
-    answerEn: 'You can contact us via WhatsApp, email or by filling out the pre-registration form. We will answer your questions as soon as possible. We also offér a free initial conversation to discuss your expectations and needs.'
+    answerPt: 'Você pode entrar em contato conosco via WhatsApp, email ou preenchendo o formulário de pré-inscrição. Responderemos suas dúvidas o mais breve possível. Também oferecemos uma conversa inicial gratuita para apresentar nosso programa.',
+    answerEn: 'You can contact us via WhatsApp, email or by filling out the pre-registration form. We will answer your questions as soon as possible. We also offer a free initial conversation to present our program.'
   }
 ];
 
@@ -161,7 +161,7 @@ export default function FAQSection() {
           <a
             href="https://wa.me/5547996448774"
             target="_blank"
-            rel="noopener noreférrer"
+            rel="noopener noreferrer"
             className="inline-block px-8 py-3 bg-green-oxford text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all"
           >
             {t('hero.faleConosco')}

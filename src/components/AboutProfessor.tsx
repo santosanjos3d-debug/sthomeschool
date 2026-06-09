@@ -1,5 +1,5 @@
 /**
- * About Proféssor Section Component
+ * About Professor Section Component
  * 
  * Design Philosophy: Elegância Clássica com Toque Moderno
  * - Destaque para credenciais acadêmicas
@@ -8,7 +8,7 @@
  * - Foco em confiança e expertise
  */
 
-export default function AboutProféssor() {
+export default function AboutProfessor() {
   return (
     <section id="sobre" className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
@@ -19,11 +19,11 @@ export default function AboutProféssor() {
               Quem Somos
             </p>
             <h2 className="text-4xl md:text-5xl font-bold text-green-oxford mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>
-              Sobre o Proféssor
+              Sobre o Professor
             </h2>
           </div>
 
-          {/* Proféssor Card */}
+          {/* Professor Card */}
           <div className="card-elegant mb-8">
             <div className="flex flex-col md:flex-row gap-8 items-start">
               {/* Avatar Placeholder */}
@@ -84,7 +84,7 @@ export default function AboutProféssor() {
             <a
               href="https://lattes.cnpq.br/9048545328091154"
               target="_blank"
-              rel="noopener noreférrer"
+              rel="noopener noreferrer"
               className="inline-block text-gold-antique font-semibold hover:text-green-oxford transition-colors"
             >
               Currículo Lattes →
