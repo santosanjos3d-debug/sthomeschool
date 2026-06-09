@@ -49,8 +49,8 @@ export default function ScienceClubSection() {
                   <span className="text-white font-bold text-sm">✓</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-green-oxford mb-1">{t('club.féature1')}</h3>
-                  <p className="text-gray-600">{t('club.féature1Desc')}</p>
+                  <h3 className="font-semibold text-green-oxford mb-1">{t('club.feature1')}</h3>
+                  <p className="text-gray-600">{t('club.feature1Desc')}</p>
                 </div>
               </div>
 
@@ -59,8 +59,8 @@ export default function ScienceClubSection() {
                   <span className="text-white font-bold text-sm">✓</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-green-oxford mb-1">{t('club.féature2')}</h3>
-                  <p className="text-gray-600">{t('club.féature2Desc')}</p>
+                  <h3 className="font-semibold text-green-oxford mb-1">{t('club.feature2')}</h3>
+                  <p className="text-gray-600">{t('club.feature2Desc')}</p>
                 </div>
               </div>
 
@@ -69,8 +69,8 @@ export default function ScienceClubSection() {
                   <span className="text-white font-bold text-sm">✓</span>
                 </div>
                 <div>
-                  <h3 className="font-semibold text-green-oxford mb-1">{t('club.féature3')}</h3>
-                  <p className="text-gray-600">{t('club.féature3Desc')}</p>
+                  <h3 className="font-semibold text-green-oxford mb-1">{t('club.feature3')}</h3>
+                  <p className="text-gray-600">{t('club.feature3Desc')}</p>
                 </div>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function ScienceClubSection() {
               <a
                 href={formUrl}
                 target="_blank"
-                rel="noopener noreférrer"
+                rel="noopener noreferrer"
                 className="btn-accent inline-block"
               >
                 {t('club.cta')}
