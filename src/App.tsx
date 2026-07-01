@@ -7,9 +7,14 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import { WhatsAppProvider, useWhatsApp } from "./contexts/WhatsAppContext";
 import { LanguageProvider } from "./contexts/LanguageContext";
+import { PaymentProvider } from "./contexts/PaymentContext";
 import Home from "./pages/Home";
 import Admin from "./pages/Admin";
 import Shop from "./pages/Shop";
+import Catalog from "./pages/Catalog";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
+import OrderConfirmation from "./pages/OrderConfirmation";
 import AdminDashboard from "./pages/AdminDashboard";
 import AdminLogin from "./pages/AdminLogin";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -20,6 +25,10 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/shop" component={Shop} />
+      <Route path="/catalog" component={Catalog} />
+      <Route path="/cart" component={Cart} />
+      <Route path="/checkout" component={Checkout} />
+      <Route path="/order-confirmation" component={OrderConfirmation} />
       <Route path="/admin-login" component={AdminLogin} />
       <Route path="/admin-dashboard" component={AdminDashboard} />
       <Route path="/admin" component={Admin} />
@@ -83,7 +92,9 @@ function App() {
     <LanguageProvider>
       <WhatsAppProvider>
         <AdminAuthProvider>
-          <AppContent />
+          <PaymentProvider>
+            <AppContent />
+          </PaymentProvider>
         </AdminAuthProvider>
       </WhatsAppProvider>
     </LanguageProvider>

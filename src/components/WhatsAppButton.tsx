@@ -57,7 +57,7 @@ export default function WhatsAppButton({
           <a
             href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
             target="_blank"
-            rel="noopener noreférrer"
+            rel="noopener noreferrer"
             className="inline-block px-4 py-2 bg-green-oxford text-white text-sm font-semibold rounded hover:bg-opacity-90 transition-all"
           >
             Enviar Mensagem

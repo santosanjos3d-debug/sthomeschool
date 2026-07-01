@@ -68,7 +68,7 @@ export default function Catalog() {
           </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               {language === 'pt' 
-                ? 'Explore nossa coleção de produtos educacionais féitos em impressão 3D. Modelos anatômicos, peças de robótica e muito mais para complementar seu aprendizado.'
+                ? 'Explore nossa coleção de produtos educacionais feitos em impressão 3D. Modelos anatômicos, peças de robótica e muito mais para complementar seu aprendizado.'
                 : 'Explore our collection of educational products made with 3D printing. Anatomical models, robotics parts and much more to complement your learning.'}
             </p>
           </div>
@@ -160,10 +160,10 @@ export default function Catalog() {
                       {language === 'pt' ? 'Inclui:' : 'Includes:'}
                     </p>
                     <ul className="space-y-1">
-                      {(language === 'pt' ? product.féatures : product.féaturesEn).slice(0, 3).map((féature, idx) => (
+                      {(language === 'pt' ? product.features : product.featuresEn).slice(0, 3).map((feature, idx) => (
                         <li key={idx} className="text-sm text-muted-foreground flex items-start gap-2">
                           <Check size={16} className="text-green-oxford flex-shrink-0 mt-0.5" />
-                          <span>{féature}</span>
+                          <span>{feature}</span>
                         </li>
                       ))}
                     </ul>

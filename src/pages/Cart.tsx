@@ -105,7 +105,7 @@ export default function Cart() {
                       </button>
                       <div>
                         <p className="text-sm text-muted-foreground mb-1">
-                          {language === 'pt' ? 'Subtotal' : 'Subtotal'}
+                          {language === 'pt' ? 'Subtotal do Item' : 'Item Subtotal'}
                         </p>
                         <p className="text-2xl font-bold text-green-oxford">
                           R$ {(item.product.price * item.quantity).toFixed(2)}

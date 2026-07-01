@@ -86,7 +86,7 @@ export default function CardPayment({
   };
 
   const installmentOptions = Array.from({ length: 12 }, (_, i) => i + 1);
-  const installmentAmount = amount / parseInt(cardData.installments);
+  const installmentAmount = amount / parseInt(cardData.installments, 10);
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">

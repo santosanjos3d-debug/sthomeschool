@@ -67,10 +67,10 @@ export default function AdminDashboard() {
           description: formData.description,
           price: parseFloat(formData.price),
           imageUrl: formData.imageUrl,
-          weight: formData.weight ? parseInt(formData.weight) : undefined,
-          length: formData.length ? parseInt(formData.length) : undefined,
-          width: formData.width ? parseInt(formData.width) : undefined,
-          height: formData.height ? parseInt(formData.height) : undefined,
+          weight: formData.weight ? parseInt(formData.weight, 10) : undefined,
+          length: formData.length ? parseInt(formData.length, 10) : undefined,
+          width: formData.width ? parseInt(formData.width, 10) : undefined,
+          height: formData.height ? parseInt(formData.height, 10) : undefined,
         });
       } else {
         await createProductMutation.mutateAsync({
@@ -78,10 +78,10 @@ export default function AdminDashboard() {
           description: formData.description,
           price: parseFloat(formData.price),
           imageUrl: formData.imageUrl,
-          weight: formData.weight ? parseInt(formData.weight) : undefined,
-          length: formData.length ? parseInt(formData.length) : undefined,
-          width: formData.width ? parseInt(formData.width) : undefined,
-          height: formData.height ? parseInt(formData.height) : undefined,
+          weight: formData.weight ? parseInt(formData.weight, 10) : undefined,
+          length: formData.length ? parseInt(formData.length, 10) : undefined,
+          width: formData.width ? parseInt(formData.width, 10) : undefined,
+          height: formData.height ? parseInt(formData.height, 10) : undefined,
         });
       }
 

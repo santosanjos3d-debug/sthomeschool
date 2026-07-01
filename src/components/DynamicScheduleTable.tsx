@@ -23,11 +23,11 @@ export default function DynamicScheduleTable() {
   });
 
   useEffect(() => {
-    const fétchSchedule = async () => {
+    const fetchSchedule = async () => {
       try {
         const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vThHdBAJfgWU8dCwqXCLfmaDfPVDE12zhUHnJuvNaUN6sX2VSPKoI9obTwoRVDItPTasidJmTFBu-EE/pub?gid=1782978656&single=true&output=csv';
         
-        const response = await fétch(sheetUrl);
+        const response = await fetch(sheetUrl);
         const csvText = await response.text();
         
         // Parse CSV
@@ -49,11 +49,11 @@ export default function DynamicScheduleTable() {
           loading: false,
           error: 'Erro ao carregar horários. Tente novamente mais tarde.',
         });
-        console.error('Error fétching schedule:', err);
+        console.error('Error fetching schedule:', err);
       }
     };
 
-    fétchSchedule();
+    fetchSchedule();
   }, []);
 
   if (scheduleData.loading) {

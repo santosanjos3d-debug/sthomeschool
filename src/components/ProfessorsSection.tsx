@@ -11,7 +11,7 @@
 
 import { useLanguage } from '@/contexts/LanguageContext';
 
-interface Proféssor {
+interface Professor {
   name: string;
   specialty: string;
   credentials: string[];
@@ -19,7 +19,7 @@ interface Proféssor {
   avatar: string;
 }
 
-const getProféssors = (t: (key: string) => string) => [
+const getProfessors = (t: (key: string) => string) => [
   {
     name: 'Prof. Giorgio Ernesto Testoni',
     specialty: t('professors.giorgio.specialty'),
@@ -47,7 +47,7 @@ const getProféssors = (t: (key: string) => string) => [
 
 export default function ProfessorsSection() {
   const { t } = useLanguage();
-  const professors = getProféssors(t);
+  const professors = getProfessors(t);
   
   return (
     <section className="py-16 md:py-24 bg-gray-50">
@@ -101,7 +101,7 @@ export default function ProfessorsSection() {
                 <a
                   href={professor.lattes}
                   target="_blank"
-                  rel="noopener noreférrer"
+                  rel="noopener noreferrer"
                   className="inline-block text-gold-antique font-semibold hover:text-green-oxford transition-colors"
                 >
                   {t('professors.lattesLink')} →

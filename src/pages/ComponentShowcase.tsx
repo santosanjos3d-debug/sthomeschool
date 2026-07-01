@@ -514,8 +514,8 @@ export default function ComponentsShowcase() {
                                 const newDate = datePickerDate
                                   ? new Date(datePickerDate)
                                   : new Date();
-                                newDate.setHours(parseInt(hours));
-                                newDate.setMinutes(parseInt(minutes));
+                                newDate.setHours(parseInt(hours, 10));
+                                newDate.setMinutes(parseInt(minutes, 10));
                                 setDatePickerDate(newDate);
                               }}
                             />
@@ -804,7 +804,7 @@ export default function ComponentsShowcase() {
                       <TableRow>
                         <TableCell className="font-medium">INV003</TableCell>
                         <TableCell>Unpaid</TableCell>
-                        <TableCell>Bank Transfér</TableCell>
+                        <TableCell>Bank Transfer</TableCell>
                         <TableCell className="text-right">$350.00</TableCell>
                       </TableRow>
                     </TableBody>
@@ -976,8 +976,8 @@ export default function ComponentsShowcase() {
               <AccordionItem value="item-3">
                 <AccordionTrigger>Is it animated?</AccordionTrigger>
                 <AccordionContent>
-                  Yes. It's animated by default, but you can disable it if you
-                  prefér.
+                   Yes. It's animated by default, but you can disable it if you
+                   prefer.
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

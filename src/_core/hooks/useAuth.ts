@@ -15,7 +15,7 @@ export function useAuth(options?: UseAuthOptions) {
 
   const meQuery = trpc.auth.me.useQuery(undefined, {
     retry: false,
-    refétchOnWindowFocus: false,
+    refetchOnWindowFocus: false,
   });
 
   const logoutMutation = trpc.auth.logout.useMutation({
@@ -78,7 +78,7 @@ export function useAuth(options?: UseAuthOptions) {
 
   return {
     ...state,
-    refresh: () => meQuery.refétch(),
+    refresh: () => meQuery.refetch(),
     logout,
   };
 }
